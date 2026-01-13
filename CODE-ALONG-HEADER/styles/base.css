@@ -1,16 +1,16 @@
-/* COLOR SCHEME
+/****************** COLOR SCHEME ******************
 Terra Cotta #E07A5F
 Deep Slate Blue #3D405B
 */
 
-/* SITE WIDE */
+/****************** SITE WIDE ******************/
 
 * {
     font-family: "Josefin Sans", sans-serif;
     box-sizing: border-box;
 }
 
-/* HEADER */
+/****************** HEADER ******************/
 
 header {
     display: grid;
@@ -33,7 +33,7 @@ header span {
     color: #3D405B;
 }
 
-/* HAMBUERGER NAVIGATION */
+/****************** HAMBURGER NAVIGATION ******************/
 
 .hamburger {
     background: none;
@@ -50,4 +50,76 @@ header span {
 
 .hamburger.show::before {
     content: "\00D7";
+}
+
+/****************** NAVIGATION ******************/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: #3D405B;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: #E07A5F;
+}
+
+/****************** NAVIGATION ******************/
+
+h1 {
+    margin-left: 10px;
+    color: #3D405B;
+}
+
+/****************** FOOTER ******************/
+
+footer {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
 }
