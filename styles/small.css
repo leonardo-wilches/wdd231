@@ -84,9 +84,9 @@ header span {
     background-color: #E07A5F;
 }
 
-/****************** NAVIGATION ******************/
+/****************** MAIN ******************/
 
-h1 {
+h1, h2 {
     margin-left: 10px;
     color: #3D405B;
 }
@@ -97,6 +97,9 @@ footer {
     background-color: #eee;
     padding: 10px;
     text-align: center;
+}
+footer div {
+    margin: 1rem;
 }
 
 .social {
