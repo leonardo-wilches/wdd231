@@ -39,7 +39,11 @@
     .course-cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
-        margin-bottom: 0;
+        gap: 10px;
+        margin: 0 10px 10px 10px ;
+    }
+
+    .course {
+        margin: 0;
     }
 }
