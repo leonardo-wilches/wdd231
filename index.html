@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 
@@ -35,15 +36,31 @@
     </nav>
     <main>
         <h1>Home</h1>
-        <section>
-            <h2>About Me</h2>
-        </section>
-        <section>
-            <h2>Student Photo</h2>
-        </section>
-        <section>
-            <h2>Web Certificate Courses</h2>
-        </section>
+        <div class="grid-layout">
+            <section class="s1">
+                <h2>About Me</h2>
+                <p>My name is Leonardo Wilches, and I'm from San Antonio, Chile. I'm 32 years old and married to a lovely woman named
+                Katherin. We have two adorable dogs. I currently work independently, making baking supplies like cake toppers and cake
+                boards. I'm also studying to earn a bachelor's degree. I love programming and enjoy coding. My hobby is playing video
+                games. I'm also very interested in anything related to technology.</p>
+            </section>
+            <section class="s1">
+                <h2>Student Photo</h2>
+                <div class="profile">
+                    <img src="images/profile.webp" alt="Profile image of Leonardo Wilches" width="16" height="16">
+                </div>
+            </section>
+            <section class="s3">
+                <h2>Web Certificate Courses</h2>
+                <div class="course-filters">
+                    <button class="button" id="allBtn">All Courses</button>
+                    <button class="button" id="wddBtn">WDD Courses</button>
+                    <button class="button" id="cseBtn">CSE Courses</button>
+                </div>
+                <p class="credits" id="totalCredits"></p>
+                <section class="course-cards" id="certificate"></section>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="social">
@@ -56,8 +73,10 @@
             <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16"
                     height="16"></a>
         </div>
-        <div>&copy; <span id="currentyear"></span> Leonardo Wilches — Chile</div>
-        <div id="lastModified"></div>
+        <div class="name">
+            <div>&copy; <span id="currentyear"></span> Leonardo Wilches — Chile</div>
+            <div id="lastModified"></div>
+        </div>
     </footer>
 </body>
 

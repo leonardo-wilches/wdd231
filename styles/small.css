@@ -86,18 +86,52 @@ header span {
 
 /****************** MAIN ******************/
 
-h1, h2 {
+h1 {
     margin-left: 10px;
+    margin: 15px 0 0 10px;
     color: #3D405B;
+}
+
+section {
+    background-color: #eee;
+    margin: 10px;
+}
+
+section h2{
+    text-align: center;
+    padding: 12px 0 8px 0;
+    margin: 0;
+    background-color: #3D405B;
+    color: #ddd;
+}
+
+section p {
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    max-width: 256px;
+    border-radius: 1rem;
+    border: #cecece solid 1px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
 /****************** FOOTER ******************/
 
 footer {
-    background-color: #eee;
-    padding: 10px;
+    padding: 0;
     text-align: center;
 }
+
 footer div {
     margin: 1rem;
 }
@@ -106,6 +140,7 @@ footer div {
     display: flex;
     justify-content: center;
     column-gap: 8px;
+    margin-top: 0;
 }
 
 .social a {
@@ -124,5 +159,58 @@ footer div {
 }
 
 .social a:hover {
-    background-color: #ddd;
+    background-color: #E07A5F;
+}
+
+.name {
+    background-color: #eee;
+    padding: 5px;
+    margin: 0;
+}
+
+/******************* COURSES *******************/
+
+.course-filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+}
+
+.button {
+    border-radius: 10px;
+    padding: 12px 0 10px 0;
+    background-color: #3D405B;
+    color: #ddd;
+    border: #3D405B solid 1px;
+}
+
+.button:hover{
+    background-color: #E07A5F;
+    color: #ddd;
+}
+
+.credits {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 12px;
+}
+
+.course {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-left: 1rem;
+    border-radius: 10px;
+}
+
+.course-cards {
+    padding-bottom: 2px;
+}
+
+.completed {
+    background: #9aff9a;
+}
+
+.incomplete {
+    background: #ffacac;
 }
