@@ -1,0 +1,19 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+section {
+    border: 2px solid #222;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+footer {
+    padding: 0;
+    text-align: center;
+}
