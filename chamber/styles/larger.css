@@ -1,0 +1,72 @@
+@media only screen and (min-width: 38rem) {
+
+    header, main, nav, footer {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 0 16px 0 16px;
+        margin-top: 2px;
+        border-bottom: none;
+    }
+
+    header span {
+        padding-top: 9px;
+        font-size: 1.5rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .head-navegation {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        font-size: 1.5rem;
+        border-bottom: solid 1px #eee;
+
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #eee;
+        text-align: left;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .social a{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 4rem;
+    }
+
+    .social img {
+        width: 2rem;
+        height: auto;
+    }
+
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+}

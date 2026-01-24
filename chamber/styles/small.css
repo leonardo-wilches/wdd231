@@ -8,6 +8,7 @@ Deep Slate Blue #3D405B
 * {
     font-family: "Josefin Sans", sans-serif;
     box-sizing: border-box;
+    width: 100%;
 }
 
 /****************** HEADER ******************/
@@ -162,55 +163,46 @@ footer div {
     background-color: #E07A5F;
 }
 
-.name {
+.info {
     background-color: #eee;
     padding: 5px;
-    margin: 0;
+    margin: 0 auto;
 }
 
-/******************* COURSES *******************/
+.info div {
+    margin: 0 auto;
+    padding: 0.2rem;
+}
 
-.course-filters {
+/******************* DIRECTORY *******************/
+
+#membersContainer {
+    margin-top: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    margin: 10px;
+    gap: 1rem;
 }
 
-.button {
-    border-radius: 10px;
-    padding: 12px 0 10px 0;
-    background-color: #3D405B;
-    color: #ddd;
-    border: #3D405B solid 1px;
+.grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.button:hover{
-    background-color: #E07A5F;
-    color: #ddd;
+.list-view {
+    display: block;
 }
 
-.credits {
-    text-align: center;
-    font-size: 1.5rem;
-    padding-top: 12px;
-}
-
-.course {
+.member-card {
     border: 1px solid #ccc;
-    margin: 10px;
-    padding-left: 1rem;
-    border-radius: 10px;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
 }
 
-.course-cards {
-    padding-bottom: 2px;
+.list-view .member-card {
+    margin-bottom: 1rem;
 }
 
-.completed {
-    background: #9aff9a;
-}
-
-.incomplete {
-    background: #ffacac;
+.member-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
 }
