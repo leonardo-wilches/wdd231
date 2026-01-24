@@ -15,7 +15,7 @@ Deep Slate Blue #3D405B
 
 header {
     display: grid;
-    grid-template-columns: 24px auto 44px;
+    grid-template-columns: 112px auto 44px;
     align-items: end;
     padding: 5px 0 5px 10px;
     column-gap: 8px;
@@ -26,7 +26,8 @@ header img {
     display: block;
     width: 100%;
     height: auto;
-    padding-bottom: 5px;
+    margin: 0;
+    padding: 0;
 }
 
 header span {
