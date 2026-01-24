@@ -16,7 +16,6 @@ Deep Slate Blue #3D405B
 header {
     display: grid;
     grid-template-columns: 80px auto 44px;
-    align-items: end;
     padding: 5px 10px 5px 10px;
     column-gap: 8px;
     border-bottom: solid 1px #ddd;
