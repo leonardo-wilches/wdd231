@@ -74,6 +74,13 @@
         display: grid;
     }
 
+    .member-card img {
+        width: 100%;
+        height: auto;
+        border: none;
+        padding: 0;
+    }
+
     /******************* LIST *******************/
 
     .list-view {
