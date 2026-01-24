@@ -21,6 +21,7 @@ function displayMembers(members) {
         card.innerHTML = `
             <img src="images/${member.image}" alt="${member.name}">
             <h3>${member.name}</h3>
+            <p><strong>Address:</strong> ${member.address}</p>
             <p><strong>Phone:</strong> ${member.phone}</p>
             <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
             <p><strong>Membership:</strong> ${getLevel(member.membershipLevel)}</p>

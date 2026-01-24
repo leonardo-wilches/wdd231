@@ -1,13 +1,13 @@
 [
     {
         "name": "TechWave Solutions",
-        "addresses": [
+        "address": [
             "Innovation Ave 123, San Antonio, Chile",
             "Branch: Sun Street 45, San Antonio, Chile"
         ],
         "phone": "+56 2 3456 7890",
         "website": "https://www.techwavesanantonio.cl",
-        "image": "tech-wave-solutions.png",
+        "image": "tech-wave-solutions.webp",
         "membershipLevel": 3,
         "category": "Technology",
         "founded": 2012,
@@ -15,12 +15,12 @@
     },
     {
         "name": "EcoVida Market",
-        "addresses": [
+        "address": [
             "Green Alley 77, San Antonio, Chile"
         ],
         "phone": "+56 63 234 5678",
         "website": "https://www.ecovidasanantonio.cl",
-        "image": "eco-vida-market.png",
+        "image": "eco-vida-market.webp",
         "membershipLevel": 2,
         "category": "Organic Supermarket",
         "founded": 2018,
@@ -28,12 +28,12 @@
     },
     {
         "name": "Andes Outdoor",
-        "addresses": [
+        "address": [
             "Mountain Road 456, San Antonio, Chile"
         ],
         "phone": "+56 45 987 6543",
         "website": "https://www.andesoutdoorsanantonio.cl",
-        "image": "andes-outdoor.png",
+        "image": "andes-outdoor.webp",
         "membershipLevel": 3,
         "category": "Outdoor & Camping",
         "founded": 2009,
@@ -41,12 +41,12 @@
     },
     {
         "name": "Patagonia Motors",
-        "addresses": [
+        "address": [
             "South Route 12, San Antonio, Chile"
         ],
         "phone": "+56 61 567 8901",
         "website": "https://www.patagoniamotorssanantonio.cl",
-        "image": "patagonia-motors.png",
+        "image": "patagonia-motors.webp",
         "membershipLevel": 1,
         "category": "Automotive",
         "founded": 2005,
@@ -54,12 +54,12 @@
     },
     {
         "name": "Aroma Chocolate",
-        "addresses": [
+        "address": [
             "Aroma Street 222, San Antonio, Chile"
         ],
         "phone": "+56 41 333 2211",
         "website": "https://www.aromachocolatesanantonio.cl",
-        "image": "aroma-chocolate.png",
+        "image": "aroma-chocolate.webp",
         "membershipLevel": 2,
         "category": "Gastronomy",
         "founded": 2014,
@@ -67,12 +67,12 @@
     },
     {
         "name": "Mar Azul Fishery",
-        "addresses": [
+        "address": [
             "Marina Coast 890, San Antonio, Chile"
         ],
         "phone": "+56 51 456 3412",
         "website": "https://www.marazulsanantonio.cl",
-        "image": "marazul.png",
+        "image": "mar-azul-fishery.webp",
         "membershipLevel": 1,
         "category": "Fishing & Distribution",
         "founded": 1998,
@@ -80,12 +80,12 @@
     },
     {
         "name": "BioHealth Clinic",
-        "addresses": [
+        "address": [
             "Health Ave 908, San Antonio, Chile"
         ],
         "phone": "+56 72 123 4455",
         "website": "https://www.biohealthsanantonio.cl",
-        "image": "biohealth.png",
+        "image": "bio-health-clinic.webp",
         "membershipLevel": 3,
         "category": "Health Services",
         "founded": 2010,

@@ -89,13 +89,9 @@ header span {
 
 h1 {
     margin-left: 10px;
-    margin: 15px 0 0 10px;
+    margin: 0 auto;
     color: #3D405B;
-}
-
-section {
-    background-color: #eee;
-    margin: 10px;
+    text-align: center;
 }
 
 section h2{
@@ -107,7 +103,6 @@ section h2{
 }
 
 section p {
-    margin: 10px;
     padding-bottom: 10px;
 }
 
@@ -176,14 +171,19 @@ footer div {
 
 /******************* DIRECTORY *******************/
 
+section {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
 #membersContainer {
     margin-top: 1rem;
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .grid-view {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .list-view {
@@ -195,6 +195,12 @@ footer div {
     padding: 1rem;
     background: white;
     border-radius: 8px;
+    align-items: center;
+    text-align: center;
+}
+
+.member-card p{
+padding: 0;
 }
 
 .list-view .member-card {
@@ -204,5 +210,41 @@ footer div {
 .member-card img {
     width: 100%;
     height: auto;
-    border-radius: 6px;
+    border: none;
+    padding: 0;
+}
+
+.view-buttons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0.5rem auto;
+}
+
+#gridBtn, #listBtn {
+    background-color: #3D405B;
+    color: #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+}
+
+#gridBtn:hover, #listBtn:hover{
+    background-color: #E07A5F;
+}
+
+.btn-img {
+    width: 1.5rem;
+    height: auto;
+    border-radius: 0;
+    margin: 0 auto;
+    border: 0;
+    padding-top: 2px;
+    align-items: center;
 }
