@@ -9,7 +9,6 @@
         align-items: center;
         font-size: 1.5rem;
         padding: 0 16px 0 16px;
-        margin-top: 2px;
         border-bottom: none;
     }
 
@@ -32,7 +31,7 @@
 
     .navigation a {
         border: none;
-        padding: 1rem 2rem 1rem 2rem;
+        margin: 0;
     }
 
     .head-navegation {
@@ -93,13 +92,12 @@
         justify-content: space-between;
         text-align: left;
         padding: 1rem;
+        margin-top: 1rem;
         gap: 1rem;
     }
 
     .list-view .member-card img {
-        width: 60px;
-        height: auto;
-        object-fit: contain;
+        display: none;
     }
 
     .list-view .member-card h3 {

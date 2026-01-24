@@ -15,7 +15,7 @@ Deep Slate Blue #3D405B
 
 header {
     display: grid;
-    grid-template-columns: 112px auto 44px;
+    grid-template-columns: 80px auto;
     align-items: end;
     padding: 5px 0 5px 10px;
     column-gap: 8px;
@@ -79,7 +79,7 @@ header span {
 }
 
 .navigation li.current {
-    background-color: #eee;
+    background-color: hsl(27, 100%, 86%);
 }
 
 .navigation a:hover {
@@ -180,14 +180,14 @@ section {
 #membersContainer {
     margin-top: 1rem;
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .grid-view {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.list-view {
+.list-view section{
     display: block;
 }
 
@@ -204,10 +204,6 @@ section {
 padding: 0;
 }
 
-.list-view .member-card {
-    margin-bottom: 1rem;
-}
-
 .member-card img {
     width: 50%;
     height: auto;
@@ -216,7 +212,7 @@ padding: 0;
 }
 
 .view-buttons {
-    display: none;
+    display: grid;
     grid-auto-flow: column;
     grid-auto-columns: auto;
     align-items: center;
@@ -248,4 +244,19 @@ padding: 0;
     border: 0;
     padding-top: 2px;
     align-items: center;
+}
+
+@media (max-width: 38rem) {
+    .list-view .member-card {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .list-view .member-card p{
+        margin: 0.8rem auto;
+    }
+
+    .list-view .member-card img {
+        display: none;
+    }
 }
