@@ -79,7 +79,7 @@ header span {
 }
 
 .navigation li.current {
-    background-color: hsl(27, 100%, 86%);
+    background-color: #ffd8b8;
 }
 
 .navigation a:hover {
