@@ -28,11 +28,11 @@
 
     .navigation ul {
         display: flex;
-        gap: 1rem;
     }
 
     .navigation a {
         border: none;
+        padding: 1rem 2rem 1rem 2rem;
     }
 
     .head-navegation {
