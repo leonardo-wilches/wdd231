@@ -193,7 +193,7 @@ section {
 .member-card {
     border: 1px solid #ccc;
     padding: 1rem;
-    background: white;
+    background:#f8f8f8;
     border-radius: 8px;
     align-items: center;
     text-align: center;
@@ -215,7 +215,7 @@ padding: 0;
 }
 
 .view-buttons {
-    display: grid;
+    display: none;
     grid-auto-flow: column;
     grid-auto-columns: auto;
     justify-content: flex-start;

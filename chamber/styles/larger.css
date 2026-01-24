@@ -69,4 +69,48 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
     }
+
+    .view-buttons {
+        display: grid;
+    }
+
+    /******************* LIST *******************/
+
+    .list-view {
+        display: block !important;
+    }
+
+    .list-view .member-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .list-view .member-card img {
+        width: 60px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .list-view .member-card h3 {
+        width: 200px;
+        font-size: 1rem;
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .list-view .member-card p {
+        margin: 0;
+        padding: 0;
+        width: 220px;
+        font-size: .9rem;
+    }
+
+    .list-view .member-card a {
+        color: #2b6cb0;
+        font-size: .9rem;
+    }
 }
