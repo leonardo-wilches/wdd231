@@ -181,9 +181,6 @@ section {
     margin-top: 1rem;
     display: grid;
     gap: 1rem;
-}
-
-.grid-view {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
