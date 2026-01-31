@@ -314,8 +314,7 @@ padding: 0;
 
 .events p {
     font-size: 1.5rem;
-    margin: 0;
-    text-align: center;
+    text-align: left;
 }
 
 .events,
@@ -387,7 +386,6 @@ padding: 0;
     }
 }
 
-.title p,
 .weather p,
 .weather-forecast ul {
     padding: 0.5rem;
