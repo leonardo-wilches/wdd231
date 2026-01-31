@@ -173,8 +173,8 @@ footer div {
 /******************* DIRECTORY *******************/
 
 section {
-    margin: 0 auto;
-    padding: 1rem;
+    margin: 1rem auto;
+    padding: 0;
 }
 
 #membersContainer {
@@ -303,14 +303,12 @@ padding: 0;
     color: #eee;
     font-size: 1.5rem;
     font-weight: 300;
-    border-radius: 10px 10px 0 0;
     padding: 1rem;
 }
 
 .title p {
     padding: 2rem;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .events p {
@@ -338,6 +336,7 @@ padding: 0;
     width: 80px;
     text-align: center;
     border: none;
+    background-color: #ccc;
 }
 
 #forecast {
