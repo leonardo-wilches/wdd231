@@ -257,3 +257,132 @@ padding: 0;
         display: none;
     }
 }
+
+/******************* HOME *******************/
+
+.hero-section {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.action {
+    width: 100px;
+    height: 50px;
+    bottom: 2rem;
+    background-color: #E07A5F;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action:hover {
+    background-color: #c9684f;
+    transform: scale(1.05);
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0;
+}
+
+.title h2 {
+    background-color: #3D405B;
+    color: #eee;
+    font-size: 1.2rem;
+    font-weight: 200;
+    border-radius: 10px 10px 0 0;
+    padding: 0.5rem;margin: 0;
+}
+
+.title p {
+    padding: 2rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.events,
+.current-weather,
+.weather-forecast,
+.spotlights {
+    background-color: #eee;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.current-weather p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.4rem;
+}
+
+#forecast {
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
+}
+
+#forecast li {
+    padding: 0.4rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.spotlight-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.spotlight-card img {
+    max-width: 120px;
+    margin: 0 auto 0.5rem;
+    display: block;
+}
+
+.spotlight-card a {
+    color: #3D405B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .home {
+        grid-template-columns: 1fr;
+    }
+}
+
+.title p,
+.current-weather p,
+.weather-forecast ul {
+    padding: 1.5rem;
+    margin: 0;
+}
