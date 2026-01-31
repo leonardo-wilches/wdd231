@@ -313,6 +313,12 @@ padding: 0;
     overflow: hidden;
 }
 
+.events p {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+}
+
 .events,
 .weather,
 .weather-forecast,
