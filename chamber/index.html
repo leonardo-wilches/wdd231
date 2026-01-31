@@ -69,8 +69,18 @@
             </section>
             <section class="weather title">
                 <h2>Current Weather</h2>
-                <p id="current-temp"></p>
-                <p id="weather-desc"></p>
+                <div>
+                    <img id="weather-icon" src="images/weather.png" alt="Weather Icon Image">
+                    <div class="weather-info">
+                        <p class="temp"><span id="current-temp"></span>°C</p>
+                        <p id="weather-desc"></p>
+                        <p>High: <span id="high-temp"></span>°C</p>
+                        <p>Low: <span id="low-temp"></span>°C</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Sunrise: <span id="sunrise"></span></p>
+                        <p>Sunset: <span id="sunset"></span></p>
+                    </div>
+                </div>
             </section>
             <section class="weather-forecast title">
                 <h2>Weather Forecast</h2>
