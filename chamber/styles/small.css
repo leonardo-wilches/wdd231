@@ -270,7 +270,7 @@ padding: 0;
     width: 100px;
     height: 50px;
     bottom: 2rem;
-    background-color: #E07A5F;
+    background-color: #3D405B;
     color: #fff;
     border: none;
     padding: 0.8rem 1.5rem;
@@ -311,11 +311,6 @@ padding: 0;
     padding: 2rem;
     margin: 0 auto;
     overflow: hidden;
-}
-
-section {
-    margin: 1rem;
-    padding: 0;
 }
 
 .events,
