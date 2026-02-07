@@ -30,6 +30,8 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
@@ -61,17 +63,6 @@
             <div class="data"><span class="label">Business Name:</span> <span id="business"></span></div>
             <div class="data"><span class="label">Date Submitted:</span> <span id="timestamp"></span></div>
         </section>
-        
-        <script>
-            const params = new URLSearchParams(window.location.search);
-
-            document.getElementById("firstName").textContent = params.get("firstName");
-            document.getElementById("lastName").textContent = params.get("lastName");
-            document.getElementById("email").textContent = params.get("email");
-            document.getElementById("phone").textContent = params.get("phone");
-            document.getElementById("business").textContent = params.get("business");
-            document.getElementById("timestamp").textContent = params.get("timestamp");
-        </script>
     </main>
     <footer>
         <div class="info">
