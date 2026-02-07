@@ -410,9 +410,13 @@ padding: 0;
 
 /******************* FORM *******************/
 
+.form-section{
+    margin: 0;
+}
+
 .form-section h1 {
-    margin-bottom: 16px;
-    color: #1f2933;
+    padding-bottom: 14px;
+    color: #ddd;
 }
 
 .join-form {
@@ -448,13 +452,13 @@ padding: 0;
 .join-form input:focus,
 .join-form select:focus,
 .join-form textarea:focus {
-    outline: 3px solid #1f4fd8;
+    outline: 3px solid #3D405B;
     outline-offset: 1px;
 }
 
 .join-form input[type="submit"] {
     margin-top: 12px;
-    background-color: #1f4fd8;
+    background-color: #3D405B;
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
@@ -465,7 +469,7 @@ padding: 0;
 
 .join-form input[type="submit"]:hover,
 .join-form input[type="submit"]:focus {
-    background-color: #173bb5;
+    background-color: #cd7f32;
 }
 
 /******************* MEMBERSHIP CARDS *******************/
@@ -476,10 +480,10 @@ padding: 0;
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: #ddd;
     border-radius: 12px;
     padding: 24px;
-    border-left: 6px solid #1f4fd8;
+    border-left: 6px solid #3D405B;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
@@ -495,7 +499,7 @@ padding: 0;
 
 .card a {
     font-weight: bold;
-    color: #1f4fd8;
+    color: #3D405B;
     text-decoration: none;
 }
 
@@ -542,7 +546,7 @@ dialog p {
 }
 
 dialog button {
-    background-color: #1f4fd8;
+    background-color: #3D405B;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
