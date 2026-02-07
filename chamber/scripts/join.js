@@ -1,1 +1,1 @@
-document.getElementById("timestamp").value = new Date().toLocaleString();
+document.getElementById("timestamp").value = new Date().toISOString();

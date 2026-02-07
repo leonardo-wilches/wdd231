@@ -66,10 +66,10 @@
         
             <label title="Organizational Title">
                 Organizational Title
-                <input type="text" name="orgTitle" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}"
+                <input type="text" name="orgTitle" required autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
                     title="Minimum 7 characters. Letters, hyphens and spaces only">
             </label>
-        
+
             <label title="Email Address">
                 Email
                 <input type="email" name="email" required autocomplete="email" placeholder="example@email.com">
