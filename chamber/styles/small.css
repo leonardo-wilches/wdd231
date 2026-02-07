@@ -568,17 +568,21 @@ button:focus {
 
 .thankyou-message {
     text-align: center;
-    margin-bottom: 32px;
 }
 
 .thankyou-message h1 {
-    color: #1f2933;
-    margin-bottom: 8px;
+    color: #ddd;
+    padding-bottom: 8px;
+}
+
+section p {
+    padding: 0;
 }
 
 .submitted-info {
     background-color: #f4f6fb;
     padding: 24px;
+    margin: 0;
     border-radius: 12px;
 }
 
