@@ -530,7 +530,7 @@ dialog {
 }
 
 dialog::backdrop {
-    background-color: #1f2933(0, 0, 0, 0.5);
+    background-color: #1f2933;
 }
 
 dialog h3 {
