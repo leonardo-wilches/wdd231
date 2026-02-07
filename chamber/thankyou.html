@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Antonio Chamber of Commerce - Home page</title>
+    <title>San Antonio Chamber of Commerce - Join page</title>
     <meta name="description"
-        content="This page content the landing and home page of the Chamber of Commerce of San Antonio Chile with some local and weather information">
+        content="This content the join page of the Chamber of Commerce of San Antonio Chile to be member or have some questions about the chamber of commerce">
     <meta name="author" content="Leonardo Wilches">
 
-    <meta property="og:title" content="Chamber of Commerce of San Antonio Chile - Home page">
+    <meta property="og:title" content="Chamber of Commerce of San Antonio Chile - Join page">
     <meta property="og:description"
-        content="This page content the langind and home page of the Chamber of Commerce of San Antonio Chile with some local information">
+        content="This content the join page of the Chamber of Commerce of San Antonio Chile to be member or have some questions about the chamber of commerce">
     <meta property="og:image"
         content="https://leonardo-wilches.github.io/wdd231/chamber/images/san-antonio-chamber.png">
-    <meta property="og:url" content="https://leonardo-wilches.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://leonardo-wilches.github.io/wdd231/chamber/join.html">
 
     <link rel="icon" href="images/path/favicon.ico">
 
@@ -29,8 +29,6 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 
@@ -43,54 +41,37 @@
         </header>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
     </div>
     <main>
         <img src="images/san-antonio-hero.webp" alt="San Antonio Port Image">
-        <section class="hero-section">
-            <button class="action" aria-label="Toggle navigation">Join Us</button>
+        <section class="section">
+            <h1>Thank You for Joining!</h1>
+            <p>We appreciate your interest in becoming a member of our Chamber.</p>
+        
+            <div class="data"><span class="label">First Name:</span> <span id="firstName"></span></div>
+            <div class="data"><span class="label">Last Name:</span> <span id="lastName"></span></div>
+            <div class="data"><span class="label">Email:</span> <span id="email"></span></div>
+            <div class="data"><span class="label">Mobile Phone:</span> <span id="phone"></span></div>
+            <div class="data"><span class="label">Business Name:</span> <span id="business"></span></div>
+            <div class="data"><span class="label">Date Submitted:</span> <span id="timestamp"></span></div>
         </section>
-        <h1>Home</h1>
-        <div class="home">  
-            <section class="events title">
-                <h2>Events</h2>
-                <p>The popular book fair will take place in Llolleo's main square on Saturday, January 31st and Sunday, February
-                    1st. The
-                    community is invited to attend and enjoy this day dedicated to books and reading. There will be stands selling
-                    books,
-                    comics, and more. Local businesses will also be present to showcase their products and services. In addition,
-                    there will
-                    be live music with guest bands to liven up this great event.</p>
-            </section>
-            <section class="weather title">
-                <h2>Current Weather</h2>
-                <div>
-                    <img id="weather-icon" src="images/weather.png" alt="Weather Icon Image">
-                    <div class="weather-info">
-                        <p class="temp"><span id="current-temp"></span>°C</p>
-                        <p id="weather-desc"></p>
-                        <p>High: <span id="high-temp"></span>°C</p>
-                        <p>Low: <span id="low-temp"></span>°C</p>
-                        <p>Humidity: <span id="humidity"></span>%</p>
-                        <p>Sunrise: <span id="sunrise"></span></p>
-                        <p>Sunset: <span id="sunset"></span></p>
-                    </div>
-                </div>
-            </section>
-            <section class="weather-forecast title">
-                <h2>Weather Forecast</h2>
-                <ul id="forecast"></ul>
-            </section>
-        </div>
-        <section class="spotlights title">
-            <h2>Member Spotlights</h2>
-            <div id="spotlight-container"></div>
-        </section>
+        
+        <script>
+            const params = new URLSearchParams(window.location.search);
+
+            document.getElementById("firstName").textContent = params.get("firstName");
+            document.getElementById("lastName").textContent = params.get("lastName");
+            document.getElementById("email").textContent = params.get("email");
+            document.getElementById("phone").textContent = params.get("phone");
+            document.getElementById("business").textContent = params.get("business");
+            document.getElementById("timestamp").textContent = params.get("timestamp");
+        </script>
     </main>
     <footer>
         <div class="info">
