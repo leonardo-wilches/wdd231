@@ -1,8 +1,22 @@
 const params = new URLSearchParams(window.location.search);
 
-document.getElementById("firstName").textContent = params.get("firstName");
-document.getElementById("lastName").textContent = params.get("lastName");
-document.getElementById("email").textContent = params.get("email");
-document.getElementById("phone").textContent = params.get("phone");
-document.getElementById("business").textContent = params.get("business");
-document.getElementById("timestamp").textContent = params.get("timestamp");
+function setText(id, value) {
+    const element = document.getElementById(id);
+    if (element) {
+        element.textContent = value || "N/A";
+    }
+}
+
+setText("fname", params.get("fname"));
+setText("lname", params.get("lname"));
+setText("email", params.get("email"));
+setText("phone", params.get("phone"));
+setText("business", params.get("business"));
+
+const rawTimestamp = params.get("timestamp");
+
+if (rawTimestamp) {
+    const date = new Date(rawTimestamp);
+    const formattedDate = date.toLocaleString();
+    setText("timestamp", formattedDate);
+}
