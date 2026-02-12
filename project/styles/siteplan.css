@@ -13,7 +13,7 @@ Body: Roboto
 */
 
 body {
-    background-color: #eaecff;
+    background-color: #eeefff;
     color: #000000;
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -27,7 +27,7 @@ div {
     background: #ffffff;
     border-left: 6px solid #00254D;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 5px #000000;
 }
 
 h1,h2 {
@@ -65,7 +65,7 @@ img {
 figure figcaption {
     text-align: center;
     margin-top: 0.5rem;
-    background-color: #fff0f0;
+    background-color: #ffffff;
     padding: 0.3rem 0.5rem;
     border-radius: 5px;
     font-family: "Comfortaa", cursive;
@@ -78,5 +78,5 @@ figure {
     background: #ffffff;
     border-left: 6px solid #00254D;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 5px #000000;
 }
