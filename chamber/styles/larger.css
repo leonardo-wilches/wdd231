@@ -2,11 +2,13 @@
 
     header, main, nav, footer {
         max-width: 100%;
-        margin: 0 auto;
+    }
+
+    img {
+        width: 100%;
     }
 
     header {
-        align-items: center;
         font-size: 1.5rem;
         padding: 0 16px 0 16px;
         border-bottom: none;
