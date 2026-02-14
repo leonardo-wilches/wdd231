@@ -155,7 +155,7 @@
 
     #places div:hover {
         transform: translateY(-8px);
-        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+        box-shadow: 0 12px 25px #0000002e;
     }
 
     #places figure {

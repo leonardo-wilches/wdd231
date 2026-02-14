@@ -656,7 +656,7 @@ section p {
     width: 50%;
     border-radius: 8px;
     background-color: #3D405B;
-    color: #ccc;
+    color: #cccccc;
     grid-area: button;
 }
 
@@ -664,7 +664,7 @@ section p {
 
 .visit-message {
     background-color: #3D405B;
-    color: white;
+    color: #ffffff;
     padding: 1rem;
     width: 70%;
     margin: 0 auto;
@@ -679,7 +679,7 @@ section p {
 .visit-message button {
     background: transparent;
     border: none;
-    color: white;
+    color: #ffffff;
     font-size: 1rem;
     cursor: pointer;
 }
