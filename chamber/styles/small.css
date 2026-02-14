@@ -695,14 +695,13 @@ section p {
     display: none;
     position: fixed;
     inset: 0;
-    background: #ffffff;
-    color: #1f2933;
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
     background: #ffffff;
+    border: 1px solid #1f2933;
     padding: 1.5rem;
     max-width: 400px;
     border-radius: 8px;
