@@ -695,7 +695,8 @@ section p {
     display: none;
     position: fixed;
     inset: 0;
-    background: #00000099;
+    background: #ffffff;
+    color: #1f2933;
     justify-content: center;
     align-items: center;
 }
