@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Antonio Chamber of Commerce - Home page</title>
+    <title>San Antonio Chamber of Commerce - Discover Page</title>
     <meta name="description"
-        content="This page content the landing and home page of the Chamber of Commerce of San Antonio Chile with some local and weather information">
+        content="This page content the Discover page of the Chamber of Commerce of San Antonio Chile with local information of inteters to the chamber mermbers and visitors.">
     <meta name="author" content="Leonardo Wilches">
 
-    <meta property="og:title" content="Chamber of Commerce of San Antonio Chile - Home page">
+    <meta property="og:title" content="Chamber of Commerce of San Antonio Chile - Discover Page">
     <meta property="og:description"
-        content="This page content the langind and home page of the Chamber of Commerce of San Antonio Chile with some local information">
+        content="This page content the Discover page of the Chamber of Commerce of San Antonio Chile with local information of inteters to the chamber mermbers and visitors.">
     <meta property="og:image"
         content="https://leonardo-wilches.github.io/wdd231/chamber/images/san-antonio-chamber.png">
-    <meta property="og:url" content="https://leonardo-wilches.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://leonardo-wilches.github.io/wdd231/chamber/discover.html">
 
     <link rel="icon" href="images/path/favicon.ico">
 
@@ -26,12 +26,12 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/places.js"></script>
 </head>
 
 <body>
@@ -43,10 +43,10 @@
         </header>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </div>
@@ -55,42 +55,12 @@
         <section class="hero-section">
             <button class="action" aria-label="Toggle navigation">Join Us</button>
         </section>
-        <h1>Home</h1>
-        <div class="home">  
-            <section class="events title">
-                <h2>Events</h2>
-                <p>The popular book fair will take place in Llolleo's main square on Saturday, January 31st and Sunday, February
-                    1st. The
-                    community is invited to attend and enjoy this day dedicated to books and reading. There will be stands selling
-                    books,
-                    comics, and more. Local businesses will also be present to showcase their products and services. In addition,
-                    there will
-                    be live music with guest bands to liven up this great event.</p>
-            </section>
-            <section class="weather title">
-                <h2>Current Weather</h2>
-                <div>
-                    <img id="weather-icon" src="images/weather.png" alt="Weather Icon Image">
-                    <div class="weather-info">
-                        <p class="temp"><span id="current-temp"></span>°C</p>
-                        <p id="weather-desc"></p>
-                        <p>High: <span id="high-temp"></span>°C</p>
-                        <p>Low: <span id="low-temp"></span>°C</p>
-                        <p>Humidity: <span id="humidity"></span>%</p>
-                        <p>Sunrise: <span id="sunrise"></span></p>
-                        <p>Sunset: <span id="sunset"></span></p>
-                    </div>
-                </div>
-            </section>
-            <section class="weather-forecast title">
-                <h2>Weather Forecast</h2>
-                <ul id="forecast"></ul>
-            </section>
+        <h1>Discover</h1>
+        <div id="places"></div>
+        <div id="visit-message" class="visit-message">
+            <span id="message-text"></span>
+            <button id="close-message" aria-label="Close message">✖</button>
         </div>
-        <section class="spotlights title">
-            <h2>Member Spotlights</h2>
-            <div id="spotlight-container"></div>
-        </section>
     </main>
     <footer>
         <div class="info">
