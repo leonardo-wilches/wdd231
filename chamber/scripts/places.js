@@ -25,6 +25,13 @@ places.forEach(place => {
     const button = document.createElement("button");
     button.textContent = "Learn More";
 
+    button.addEventListener("click", () => {
+        document.querySelector("#modal-title").textContent = place.name;
+        document.querySelector("#modal-info").textContent = place.modalInfo;
+
+        document.querySelector("#place-modal").classList.add("show");
+    });
+
     card.appendChild(title);
     card.appendChild(figure);
     card.appendChild(address);
@@ -67,4 +74,12 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#visit-message").style.display = "none";
     });
 
+});
+
+
+const modal = document.querySelector("#place-modal");
+const closeModal = document.querySelector("#close-modal");
+
+closeModal.addEventListener("click", () => {
+    modal.classList.remove("show");
 });

@@ -41,7 +41,6 @@
         align-items: center;
         font-size: 1.5rem;
         border-bottom: solid 1px #eee;
-
     }
 
     footer {
@@ -125,15 +124,14 @@
     #places {
         display: grid;
         grid-template-columns: 1fr;
-        }
+    }
 
     #places div {
         display: grid;
         grid-template-areas:
-            "photograph name"
-            "photograph description"
-            "photograph location"
-            "photograph button";
+        "photograph name"
+        "photograph description"
+        "button location";
         align-items: start;
     }
 
@@ -145,7 +143,6 @@
         overflow: hidden;
         border-radius: 8px;
     }
-
     /************** HOVER EFFECT ****************/
     
     #places div {
@@ -174,5 +171,9 @@
     #places figure img:hover {
         transform: scale(1.08);
         filter: brightness(90%);
+    }
+
+    #places button:hover {
+        background-color: #cd7f32;
     }
 }

@@ -141,4 +141,15 @@
         grid-template-columns: 1fr 1fr;
         margin: 0;
     }
+
+    #places div {
+        display: grid;
+        grid-template-areas:
+        "photograph name"
+        "photograph description"
+        "photograph location"
+        "photograph button";
+        align-items: start;
+    }
+
 }

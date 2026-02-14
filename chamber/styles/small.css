@@ -268,10 +268,11 @@ padding: 0;
     background-color: #3D405B;
     color: #fff;
     border: none;
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
+    text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -650,8 +651,8 @@ section p {
     grid-area: location;
 }
 
-#places div button {
-    margin: 0.5rem auto;
+#places button {
+    margin: 1rem auto;
     padding: 0.5rem;
     width: 50%;
     border-radius: 8px;
@@ -686,4 +687,38 @@ section p {
 
 .visit-message button:hover {
     opacity: 0.7;
+}
+
+/******************* LEARN MORE BUTTON ****************************/
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #00000099;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 1.5rem;
+    max-width: 400px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.modal.show {
+    display: flex;
+}
+
+#close-modal {
+    position: absolute;
+    padding-top: 0.4rem;
+    top: 12px;
+    right: 10px;
+    background:none;
+    border: 0.2px solid #1f2933;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
