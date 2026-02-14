@@ -1,6 +1,8 @@
 @media only screen and (min-width: 64rem) {
-
-    header, main, nav, footer {
+    header,
+    main,
+    nav,
+    footer {
         max-width: 100%;
     }
 
@@ -9,6 +11,7 @@
     }
 
     header {
+        align-items: center;
         font-size: 1.5rem;
         padding: 0 16px 0 16px;
         border-bottom: none;
@@ -39,7 +42,6 @@
     .head-navegation {
         display: grid;
         grid-template-columns: 1fr auto;
-        align-items: center;
         font-size: 1.5rem;
         border-bottom: solid 1px #eee;
 
@@ -80,6 +82,16 @@
         height: auto;
         border: none;
         padding: 0;
+    }
+
+    .member-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+    }
+
+    .spotlight-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
     }
 
     /******************* LIST *******************/
@@ -125,7 +137,8 @@
 
     #places {
         display: grid;
-        gap: 1rem;
+        gap: 0;
         grid-template-columns: 1fr 1fr;
+        margin: 0;
     }
 }
