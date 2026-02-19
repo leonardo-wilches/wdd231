@@ -1,0 +1,726 @@
+/****************** SITE WIDE ******************/
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/****************** HEADER ******************/
+
+header {
+    display: grid;
+    grid-template-columns: 80px auto 44px;
+    padding: 5px 10px 5px 10px;
+    column-gap: 8px;
+    border-bottom: solid 2px #ddd;
+    align-items: center;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #054d00;
+}
+
+/****************** HAMBURGER NAVIGATION ******************/
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #3D405B;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/****************** NAVIGATION ******************/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: #054d00;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #b8ffd6;
+}
+
+.navigation a:hover {
+    background-color: #5fe08a;
+}
+
+/****************** MAIN ******************/
+
+h1 {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #054d00;
+    color: #ccc;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    background-color: #054d00;
+    color: #ccc;
+}
+
+div h2 {
+    border-radius: 10px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    max-width: 256px;
+    border-radius: 1rem;
+    border: #cecece solid 1px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/****************** FOOTER ******************/
+
+footer {
+    padding: 0;
+    text-align: center;
+}
+
+footer div {
+    margin: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin-top: 16px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #E07A5F;
+}
+
+.info {
+    background-color: #eee;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.info div {
+    margin: 0 auto;
+    padding: 0.2rem;
+}
+
+/******************* DIRECTORY *******************/
+
+section {
+    margin: 1rem auto;
+    padding: 0;
+}
+
+#membersContainer {
+    margin: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.list-view section {
+    display: block;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background: #f8f8f8;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+}
+
+.member-card p {
+    padding: 0;
+}
+
+.member-card img {
+    width: 50%;
+    height: auto;
+    border: none;
+    padding: 0;
+}
+
+.view-buttons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0.5rem auto;
+}
+
+#gridBtn,
+#listBtn {
+    background-color: #054d00;
+    color: #ccc;
+    padding: 1rem;
+    border: 1px solid #054d00;
+    border-radius: 10px;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+}
+
+#gridBtn:hover,
+#listBtn:hover {
+    background-color: #5fe07b;
+}
+
+.btn-img {
+    width: 1.5rem;
+    height: auto;
+    border-radius: 0;
+    margin: 0 auto;
+    border: 0;
+    padding-top: 2px;
+    align-items: center;
+}
+
+@media (max-width: 38rem) {
+    .list-view .member-card {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .list-view .member-card p {
+        margin: 0.8rem auto;
+    }
+
+    .list-view .member-card img {
+        display: none;
+    }
+}
+
+/******************* HOME *******************/
+
+.hero-section {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.action {
+    width: 100px;
+    height: 50px;
+    bottom: 2rem;
+    background-color: #054d00;
+    color: #fff;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action:hover {
+    background-color: #4fc955;
+    transform: scale(1.05);
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0;
+    margin: 0 1rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.title h2 {
+    background-color: #054d00;
+    color: #eee;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
+}
+
+.title p {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.events p {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.events,
+.weather,
+.weather-forecast,
+.spotlights {
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.spotlights {
+    margin: 0 1rem 1rem 1rem;
+}
+
+.weather-info {
+    text-align: center;
+    padding: 0.4rem;
+}
+
+#weather-icon {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    text-align: center;
+    border: none;
+    background-color: #ccc;
+}
+
+#forecast {
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
+}
+
+#forecast li {
+    padding: 0.4rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.spotlight-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.spotlight-card img {
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.spotlight-card a {
+    color: #3D405B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .home {
+        grid-template-columns: 1fr;
+    }
+}
+
+.weather p,
+.weather-forecast ul {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+/******************* JOIN *******************/
+
+.join-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    display: grid;
+    gap: 32px;
+}
+
+@media (min-width: 900px) {
+    .join-main {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+}
+
+/******************* FORM *******************/
+
+.form-section {
+    margin: 0;
+}
+
+.form-section h1 {
+    padding-bottom: 14px;
+    color: #ddd;
+}
+
+.join-form {
+    background-color: #f4f6fb;
+    padding: 32px;
+    border-radius: 12px;
+    display: grid;
+    gap: 18px;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: #1f2933;
+    gap: 6px;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+.join-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    outline: 3px solid #3D405B;
+    outline-offset: 1px;
+}
+
+.join-form input[type="submit"] {
+    margin-top: 12px;
+    background-color: #3D405B;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.join-form input[type="submit"]:hover,
+.join-form input[type="submit"]:focus {
+    background-color: #32cd4c;
+}
+
+/******************* MEMBERSHIP CARDS *******************/
+
+.membership-cards {
+    display: grid;
+    gap: 16px;
+}
+
+.card {
+    background-color: #ddd;
+    border-radius: 12px;
+    padding: 24px;
+    border-left: 6px solid #3D405B;
+    box-shadow: 0 6px 16px #1f2933;
+}
+
+.card h2 {
+    margin-bottom: 8px;
+    color: #1f2933;
+}
+
+.card p {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.card a {
+    font-weight: bold;
+    color: #3D405B;
+    text-decoration: none;
+}
+
+.card a:hover,
+.card a:focus {
+    text-decoration: underline;
+}
+
+.card.np {
+    border-color: #10b981;
+}
+
+.card.bronze {
+    border-color: #cd7f32;
+}
+
+.card.silver {
+    border-color: #9ca3af;
+}
+
+.card.gold {
+    border-color: #f59e0b;
+}
+
+/******************* MODALS *******************/
+
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 32px;
+    max-width: 400px;
+}
+
+dialog::backdrop {
+    background-color: #1f2933;
+}
+
+dialog h3 {
+    margin-bottom: 8px;
+}
+
+dialog p {
+    margin-bottom: 16px;
+}
+
+dialog button {
+    background-color: #3D405B;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/******************* ACCESIBILITY *******************/
+
+a:focus,
+button:focus {
+    outline: 3px solid #f59e0b;
+    outline-offset: 2px;
+}
+
+/******************* THANK YOU *******************/
+
+.thankyou-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.thankyou-message {
+    text-align: center;
+}
+
+.thankyou-message h1 {
+    color: #ddd;
+    padding-bottom: 8px;
+}
+
+section p {
+    padding: 0;
+}
+
+.submitted-info {
+    background-color: #f4f6fb;
+    padding: 24px;
+    margin: 0;
+    border-radius: 12px;
+}
+
+.submitted-info h2 {
+    margin-bottom: 16px;
+}
+
+.submitted-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.submitted-info li {
+    padding: 8px 0;
+    border-bottom: 1px solid #d1d5db;
+    font-size: 16px;
+}
+
+/******************* DISCOVER *******************/
+
+#places div {
+    margin: 1rem 1rem 1rem 1rem;
+    border: 0.1px solid #9ca3af;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photograph"
+        "description"
+        "location"
+        "button";
+}
+
+#places div h2 {
+    margin: 1rem;
+    text-align: center;
+    grid-area: name;
+    margin-bottom: 0;
+}
+
+#places div figure {
+    grid-area: photograph;
+}
+
+#places div img {
+    width: 100%;
+}
+
+#places div p {
+    margin: 1rem;
+    text-align: center;
+    grid-area: description;
+
+}
+
+#places div address {
+    margin: 1rem;
+    text-align: center;
+    grid-area: location;
+}
+
+#places button {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    width: 50%;
+    border-radius: 8px;
+    background-color: #054d00;
+    color: #cccccc;
+    grid-area: button;
+}
+
+/******************* VISIT MESSAGE *******************/
+
+.visit-message {
+    background-color: #3D405B;
+    color: #ffffff;
+    padding: 1rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.visit-message button {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.visit-message button:hover {
+    opacity: 0.7;
+}
+
+/******************* LEARN MORE BUTTON ****************************/
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #ffffff;
+    border: 1px solid #1f2933;
+    padding: 1.5rem;
+    max-width: 400px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.modal.show {
+    display: flex;
+}
+
+#close-modal {
+    position: absolute;
+    padding-top: 0.4rem;
+    top: 12px;
+    right: 10px;
+    background: none;
+    border: 0.2px solid #1f2933;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

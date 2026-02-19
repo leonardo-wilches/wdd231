@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveler Treasure - Home page</title>
+    <meta name="description"
+        content="This page contains the landing and home page of Traveler Treasure where local information of tourist places is displayed">
+    <meta name="author" content="Leonardo Wilches">
+
+    <meta property="og:title" content="Traveler Treasure - Home page">
+    <meta property="og:description"
+        content="This page contains the landing and home page of Traveler Treasure where local information of tourist places is displayed">
+    <meta property="og:image"
+        content="https://leonardo-wilches.github.io/wdd231/final">
+    <meta property="og:url" content="https://leonardo-wilches.github.io/wdd231/chamber/index.html">
+
+    <link rel="icon" href="images/path/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script type="module" src="scripts/places.js"></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <div class="head-navegation">
+        <header>
+            <img src="images/traveler-treasure-logo.png" alt="Site Logo Image" width="512" height="512">
+            <span>Traveler Treasure</span>
+            <button id="ham-btn" class="hamburger" aria-label="Toggle navigation"></button>
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="club.html">Treasures Club</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Home</h1>
+        <div class="home">
+            <section class="events title">
+                <h2>San Antonio</h2>
+                <p>San Antonio is a charming coastal city known for its lively port and beautiful ocean views. Visitors can enjoy a
+                peaceful walk along the waterfront, watch the fishing boats come and go, or explore nearby beaches perfect for relaxing
+                afternoons. One of the most popular attractions is Paseo Bellamar, a scenic promenade with fresh sea air and local
+                vendors.
+                
+                For a more cultural experience, the Museo de Historia Natural e Histórico de San Antonio offers insight into the area’s
+                maritime history. A visit wouldn’t be complete without trying fresh seafood from local markets, especially the
+                traditional Chilean dish empanadas de mariscos. San Antonio combines authentic local life with coastal beauty, making it
+                a relaxing and memorable destination.</p>
+            </section>
+            <section class="weather title">
+                <h2>Current Weather</h2>
+                <div>
+                    <img id="weather-icon" src="images/weather.png" alt="Weather Icon Image">
+                    <div class="weather-info">
+                        <p class="temp"><span id="current-temp"></span>°C</p>
+                        <p id="weather-desc"></p>
+                        <p>High: <span id="high-temp"></span>°C</p>
+                        <p>Low: <span id="low-temp"></span>°C</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Sunrise: <span id="sunrise"></span></p>
+                        <p>Sunset: <span id="sunset"></span></p>
+                    </div>
+                </div>
+            </section>
+            <section class="weather-forecast title">
+                <h2>Weather Forecast</h2>
+                <ul id="forecast"></ul>
+            </section>
+        </div>
+        <h2>Discover</h2>
+        <div id="places"></div>
+        <div id="place-modal" class="modal">
+            <div class="modal-content">
+                <button id="close-modal">✖</button>
+                <h2 id="modal-title"></h2>
+                <p id="modal-info"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <div>Traveler Treasure Chile</div>
+            <div>1026 Los Alerces St</div>
+            <div>San Antonio, Chile</div>
+            <div>info@traveler-treasure.org</div>
+            <div>+56 1 2345 6789</div>
+        </div>
+        <div class="social">
+            <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="GitHub Logo Image" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn Logo Image"
+                    width="16" height="16"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.svg"
+                    alt="Instagram Logo Image" width="16" height="16"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Logo Image"
+                    width="16" height="16"></a>
+        </div>
+        <div class="info">
+            <div>Leonardo Wilches</div>
+            <div>WDD 231 Web Front End Development</div>
+            <div>&copy;<span id="currentyear"></span> Traveler Treasure Chile</div>
+            <div id="lastModified"></div>
+        </div>
+    </footer>
+</body>
+
+</html>

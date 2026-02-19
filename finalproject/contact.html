@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Antonio Chamber of Commerce - Contact Page</title>
+    <meta name="description"
+        content="This content the join page of the Chamber of Commerce of San Antonio Chile to be member or have some questions about the chamber of commerce">
+    <meta name="author" content="Leonardo Wilches">
+
+    <meta property="og:title" content="Chamber of Commerce of San Antonio Chile - Join page">
+    <meta property="og:description"
+        content="This content the join page of the Chamber of Commerce of San Antonio Chile to be member or have some questions about the chamber of commerce">
+    <meta property="og:image"
+        content="https://leonardo-wilches.github.io/wdd231/chamber/images/san-antonio-chamber.png">
+    <meta property="og:url" content="https://leonardo-wilches.github.io/wdd231/chamber/join.html">
+
+    <link rel="icon" href="images/path/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <div class="head-navegation">
+        <header>
+            <img src="images/traveler-treasure-logo.png" alt="Site Logo Image" width="512" height="512">
+            <span>Traveler Treasure</span>
+            <a href="#" id="ham-btn" class="hamburger" aria-label="Toggle navigation"></a>
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="club.html">Treasures Club</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="current"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="join-main">
+        <section class="form-section">
+            <h1>Join Our Chamber</h1>
+    
+            <form method="get" action="thankyou.html" class="join-form">
+    
+                <label title="Applicant First Name">
+                    First Name
+                    <input type="text" name="fname" required autocomplete="given-name" title="Enter your first name">
+                </label>
+    
+                <label title="Applicant Last Name">
+                    Last Name
+                    <input type="text" name="lname" required autocomplete="family-name" title="Enter your last name">
+                </label>
+    
+                <label title="Email Address">
+                    Email
+                    <input type="email" name="email" required autocomplete="email" placeholder="example@email.com"
+                        title="Enter a valid email address">
+                </label>
+    
+                <label title="Mobile Phone Number">
+                    Mobile Phone
+                    <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile phone number">
+                </label>
+    
+                <label title="Organization Name">
+                    Business Name
+                    <input type="text" name="business" required autocomplete="organization"
+                        title="Enter your organization name">
+                </label>
+    
+                <label title="Business Description">
+                    Business Description
+                    <textarea name="description" title="Describe your organization"></textarea>
+                </label>
+    
+                <input type="hidden" name="timestamp" id="timestamp" value="pending">
+    
+                <input type="submit" value="Join to Traveler Treasures Club">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="info">
+            <div>Traveler Treasure Chile</div>
+            <div>1026 Los Alerces St</div>
+            <div>San Antonio, Chile</div>
+            <div>info@traveler-treasure.org</div>
+            <div>+56 1 2345 6789</div>
+        </div>
+        <div class="social">
+            <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="GitHub Logo Image" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn Logo Image"
+                    width="16" height="16"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram Logo Image"
+                    width="16" height="16"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Logo Image"
+                    width="16" height="16"></a>
+        </div>
+        <div class="info">
+            <div>Leonardo Wilches</div>
+            <div>WDD 231 Web Front End Development</div>
+            <div>&copy;<span id="currentyear"></span> Traveler Treasure Chile</div>
+            <div id="lastModified"></div>
+        </div>
+    </footer>
+</body>
+
+</html>

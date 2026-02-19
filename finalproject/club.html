@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveler Treasure - Club Page</title>
+    <meta name="description"
+        content="This page contains the club where you can view souvenir products with their respective descriptions and images.">
+    <meta name="author" content="Leonardo Wilches">
+
+    <meta property="og:title" content="Traveler Treasure - Club page">
+    <meta property="og:description"
+        content="This page contains the club where you can view souvenir products with their respective descriptions and images.">
+    <meta property="og:image" content="https://leonardo-wilches.github.io/wdd231/final>
+    <meta property=" og:url" content="https://leonardo-wilches.github.io/wdd231/chamber/index.html">
+
+    <link rel="icon" href="images/path/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script type="module" src="scripts/souvenirs.js"></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <div class="head-navegation">
+        <header>
+            <img src="images/traveler-treasure-logo.png" alt="Site Logo Image" width="512" height="512">
+            <span>Treasures Club</span>
+            <a href="#" id="ham-btn" class="hamburger" aria-label="Toggle navigation"></a>
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="club.html">Treasures Club</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+<main>
+    <h1>Treasures Club</h1>
+
+    <section class="products">
+        <div id="places" class="products-grid"></div>
+    </section>
+    <div id="place-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button id="close-modal" aria-label="Close modal">✖</button>
+            <h2 id="modal-title"></h2>
+            <p id="modal-info"></p>
+        </div>
+    </div>
+</main>
+    <footer>
+        <div class="info">
+            <div>Traveler Treasure Chile</div>
+            <div>1026 Los Alerces St</div>
+            <div>San Antonio, Chile</div>
+            <div>info@traveler-treasure.org</div>
+            <div>+56 1 2345 6789</div>
+        </div>
+        <div class="social">
+            <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="GitHub Logo Image" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn Logo Image"
+                    width="16" height="16"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram Logo Image"
+                    width="16" height="16"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Logo Image"
+                    width="16" height="16"></a>
+        </div>
+        <div class="info">
+            <div>Leonardo Wilches</div>
+            <div>WDD 231 Web Front End Development</div>
+            <div>&copy;<span id="currentyear"></span> Traveler Treasure Chile</div>
+            <div id="lastModified"></div>
+        </div>
+    </footer>
+</body>
+
+</html>
