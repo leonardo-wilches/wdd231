@@ -154,4 +154,20 @@
         align-items: start;
     }
 
+    #souvenirs {
+        display: grid;
+        gap: 0;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+    }
+
+    #souvenirs div {
+        display: grid;
+        grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "photograph price";
+        align-items: start;
+    }
+
 }

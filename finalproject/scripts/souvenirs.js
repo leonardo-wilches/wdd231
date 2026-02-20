@@ -1,6 +1,6 @@
 import souvenirs from "../data/souvenirs.mjs";
 
-const container = document.querySelector("#places");
+const container = document.querySelector("#souvenirs");
 
 souvenirs.forEach((souvenir) => {
 
