@@ -169,5 +169,24 @@
             "photograph price";
         align-items: start;
     }
+    
+    #places div:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px #0000002e;
+    }
 
+    #places div {
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+        border-radius: 10px;
+}
+
+    #souvenirs div:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px #0000002e;
+    }
+
+    #souvenirs div {
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+        border-radius: 10px;
+    }
 }
