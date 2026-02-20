@@ -86,7 +86,7 @@ h1 {
     margin: 0 auto;
     padding: 1rem;
     background-color: #054d00;
-    color: #ccc;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -95,7 +95,7 @@ h2 {
     padding: 1rem;
     margin: 0;
     background-color: #054d00;
-    color: #ccc;
+    color: #ffffff;
 }
 
 div h2 {
@@ -660,7 +660,7 @@ section p {
     width: 50%;
     border-radius: 8px;
     background-color: #054d00;
-    color: #cccccc;
+    color: #ffffff;
     grid-area: button;
 }
 
